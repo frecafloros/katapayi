@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>カタパイ語 (katapali katapayile)</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/menus-min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/base-min.css">
+        <link href = " https://unpkg.com/sanitize.css " rel = " stylesheet "/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/font.css">
+    </head>
+    <body>
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <span></span>
+            </a>
+            
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="../index.html">
+                        <p>カタパイ語</p>
+                    </a>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="../index.html" class="pure-menu-link">ホーム</a></li>
+                        <li class="pure-menu-item"><a href="philosophy.html" class="pure-menu-link">設計思想</a></li>
+                        <li class="pure-menu-item"><a href="grammar.html" class="pure-menu-link pure-menu-selected">カタパイ語文法</a></li>
+                        <li class="pure-menu-item"><a href="corpus.html" class="pure-menu-link">カタパイ語例文集</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="header">
+                    <h1>文法</h1>
+                </div>
+
+                <div class="content">
+                    <p>現行文法は ver.0.3 (2022-10-16)。</p>
+                    <br>
+                    <h2>1. 音韻論</h2>
+                    <h3>1.1 音素</h3>
+                    <p>
+                        カタパイ語の各音素は<b>子音(consonants)</b>・<b>母音(vowel)</b>から構成される。
+                    </p>
+                    <p>
+                        カタパイ語では独自のアブギダ「<b>花影（かえい）文字</b>」を使用する。また、ラテン文字またはキリル文字での転写も用いられる。ラテン字転写で使う文字は以下の通り。
+                        <ul>
+                            <li>母音：a, e, i, o, u</li>
+                            <li>子音：p, t, k, f, s, h, c, m, n, q, r, l, y, w, x</li>
+                        </ul>                                               
+                    </p>
+                    <h4>1.1.1 母音</h4>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>花影文字</th>
+                                    <th>ラテン文字</th>
+                                    <th>キリル文字</th>
+                                    <th>標準音価</th>
+                                    <th>読み</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="kaei-maru">qa</span></td>
+                                    <td>a</td>
+                                    <td>а</td>
+                                    <td>[a]</td>
+                                    <td>あ</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">qe</span></td>
+                                    <td>e</td>
+                                    <td>е</td>
+                                    <td>[e]</td>
+                                    <td>え</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">qi</span></td>
+                                    <td>i</td>
+                                    <td>и</td>
+                                    <td>[i]</td>
+                                    <td>い</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">qo</span></td>
+                                    <td>o</td>
+                                    <td>о</td>
+                                    <td>[o]</td>
+                                    <td>お</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">qu</span></td>
+                                    <td>u</td>
+                                    <td>у</td>
+                                    <td>[u]</td>
+                                    <td>う</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h4>1.1.2 子音</h4>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>花影文字</th>
+                                    <th>ラテン文字</th>
+                                    <th>キリル文字</th>
+                                    <th>標準音価</th>
+                                    <th>読み</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="kaei-maru">p</span></td>
+                                    <td>p</td>
+                                    <td>п</td>
+                                    <td>[p]</td>
+                                    <td>ぱ行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">t</span></td>
+                                    <td>t</td>
+                                    <td>т</td>
+                                    <td>[t]</td>
+                                    <td>た行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">k</span></td>
+                                    <td>k</td>
+                                    <td>к</td>
+                                    <td>[k]</td>
+                                    <td>か行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">f</span></td>
+                                    <td>f</td>
+                                    <td>ф</td>
+                                    <td>[f]</td>
+                                    <td>ふぁ行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">s</span></td>
+                                    <td>s</td>
+                                    <td>с</td>
+                                    <td>[s]</td>
+                                    <td>さ行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">h</span></td>
+                                    <td>h</td>
+                                    <td>х</td>
+                                    <td>[h]</td>
+                                    <td>は行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">c</span></td>
+                                    <td>c</td>
+                                    <td>ц</td>
+                                    <td>[ts]</td>
+                                    <td>つぁ行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">m</span></td>
+                                    <td>m</td>
+                                    <td>м</td>
+                                    <td>[m]</td>
+                                    <td>ま行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">n</span></td>
+                                    <td>n</td>
+                                    <td>н</td>
+                                    <td>[n]</td>
+                                    <td>な行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">g</span></td>
+                                    <td>g</td>
+                                    <td>г</td>
+                                    <td>[ŋ]</td>
+                                    <td>か゚行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">r</span></td>
+                                    <td>r</td>
+                                    <td>р</td>
+                                    <td>[r]</td>
+                                    <td>ら行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">l</span></td>
+                                    <td>l</td>
+                                    <td>л</td>
+                                    <td>[l]</td>
+                                    <td>ら行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">y</span></td>
+                                    <td>y</td>
+                                    <td>й</td>
+                                    <td>[j]</td>
+                                    <td>や行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">w</span></td>
+                                    <td>w</td>
+                                    <td>в</td>
+                                    <td>[w]</td>
+                                    <td>わ行</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="kaei-maru">x</span></td>
+                                    <td>x</td>
+                                    <td>ш</td>
+                                    <td>[ʃ]</td>
+                                    <td>しゃ行</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h3>1.2 文字</h3>
+                    <p>
+                        カタパイ語は通常「<b>花影文字</b>」で表記される。
+                        花影文字は14種の子音字および5種の母音記号からなるアブギダである。
+                        連母音 aa ee ii oo uu を表記する際には a e i o u を2回分綴る。
+                        母音記号がなく単に子音字のみを書いた場合、それは子音単体を表す。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>∅</th>
+                                    <th>p</th>
+                                    <th>t</th>
+                                    <th>k</th>
+                                    <th>f</th>
+                                    <th>s</th>
+                                    <th>h</th>
+                                    <th>c</th>
+                                    <th>m</th>
+                                    <th>n</th>
+                                    <th>g</th>
+                                    <th>r</th>
+                                    <th>l</th>
+                                    <th>y</th>
+                                    <th>w</th>
+                                    <th>x</th>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th>∅</th>
+                                    <td>q</td>
+                                    <td>p</td>
+                                    <td>t</td>
+                                    <td>k</td>
+                                    <td>f</td>
+                                    <td>s</td>
+                                    <td>h</td>
+                                    <td>c</td>
+                                    <td>m</td>
+                                    <td>n</td>
+                                    <td>g</td>
+                                    <td>r</td>
+                                    <td>l</td>
+                                    <td>y</td>
+                                    <td>w</td>
+                                    <td>x</td>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th><font face="sans-serif">a</font></th>
+                                    <td>qa</td>
+                                    <td>pa</td>
+                                    <td>ta</td>
+                                    <td>ka</td>
+                                    <td>fa</td>
+                                    <td>sa</td>
+                                    <td>ha</td>
+                                    <td>ca</td>
+                                    <td>ma</td>
+                                    <td>na</td>
+                                    <td>ga</td>
+                                    <td>ra</td>
+                                    <td>la</td>
+                                    <td>ya</td>
+                                    <td>wa</td>
+                                    <td>xa</td>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th><font face="sans-serif">e</font></th>
+                                    <td>qe</td>
+                                    <td>pe</td>
+                                    <td>te</td>
+                                    <td>ke</td>
+                                    <td>fe</td>
+                                    <td>se</td>
+                                    <td>he</td>
+                                    <td>ce</td>
+                                    <td>me</td>
+                                    <td>ne</td>
+                                    <td>ge</td>
+                                    <td>re</td>
+                                    <td>le</td>
+                                    <td>ye</td>
+                                    <td>we</td>
+                                    <td>xe</td>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th><font face="sans-serif">i</font></th>
+                                    <td>qi</td>
+                                    <td>pi</td>
+                                    <td>ti</td>
+                                    <td>ki</td>
+                                    <td>fi</td>
+                                    <td>si</td>
+                                    <td>hi</td>
+                                    <td>ci</td>
+                                    <td>mi</td>
+                                    <td>ni</td>
+                                    <td>gi</td>
+                                    <td>ri</td>
+                                    <td>li</td>
+                                    <td>yi</td>
+                                    <td>wi</td>
+                                    <td>xi</td>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th><font face="sans-serif">o</font></th>
+                                    <td>qo</td>
+                                    <td>po</td>
+                                    <td>to</td>
+                                    <td>ko</td>
+                                    <td>fo</td>
+                                    <td>so</td>
+                                    <td>ho</td>
+                                    <td>co</td>
+                                    <td>mo</td>
+                                    <td>no</td>
+                                    <td>go</td>
+                                    <td>ro</td>
+                                    <td>lo</td>
+                                    <td>yo</td>
+                                    <td>wo</td>
+                                    <td>xo</td>
+                                </tr>
+                                <tr class="kaei-maru">
+                                    <th><font face="sans-serif">u</font></th>
+                                    <td>qu</td>
+                                    <td>pu</td>
+                                    <td>tu</td>
+                                    <td>ku</td>
+                                    <td>fu</td>
+                                    <td>su</td>
+                                    <td>hu</td>
+                                    <td>cu</td>
+                                    <td>mu</td>
+                                    <td>nu</td>
+                                    <td>gu</td>
+                                    <td>ru</td>
+                                    <td>lu</td>
+                                    <td>yu</td>
+                                    <td>wu</td>
+                                    <td>xu</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h4>1.2.3 特殊な発音</h4>
+                    <p>
+                        <span class="kaei-maru">-pw-</span>, <span class="kaei-maru">-mw-</span> (-pw-, -mw-) は [pʷ], [mʷ] で発音される。
+                        <span class="kaei-maru">-ny-</span> (-ny-) は [ɲ] で発音される。
+                    </p>
+                    <h3>1.3 アクセント</h3>
+                    <p>アクセントによる語の弁別は行わない。</p>
+                    <br>
+                    <h2>2. 形態論</h2>
+                    <h3>2.1 品詞分類</h3>
+                    <p>品詞は以下の6種類がある：</p>
+                    <ul>
+                        <li>名詞 noun</li>
+                        <li>動詞 verb</li>
+                        <li>形容詞 adjective</li>
+                        <li>副詞 adverb</li>
+                        <li>接続詞 conjugation</li>
+                        <li>心態詞 attitudinal</li>
+                    </ul>
+                    <h4>2.1.1 可換品詞</h4>
+                    <p>
+                        カタパイ語の品詞のうち、名詞・動詞・形容詞・副詞の4つは<b>可換品詞</b>である。
+                        これらは相互に品詞転換が可能で、品詞語尾を語幹に接続することで品詞転換がなされる。
+                        品詞語尾はそれぞれ名詞：<span class="kaei-maru">-li</span>(-li)、動詞：<span class="kaei-maru">-la</span>(-la)、形容詞：<span class="kaei-maru">-le</span>(-le)、副詞：<span class="kaei-maru">-lu</span>(-lu)であるが、通常、名詞語尾<span class="kaei-maru">-li</span>(-li)は省略される。
+                        辞書形、題目、名詞句（無述語文）、呼応用法のときには名詞語尾<span class="kaei-maru">-li</span>(-li)が必須。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>品詞語尾</th>
+                                    <th></th>
+                                    <th>品詞</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">-li</td>
+                                    <td>-li</td>
+                                    <td>名詞</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-la</td>
+                                    <td>-la</td>
+                                    <td>動詞</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-le</td>
+                                    <td>-le</td>
+                                    <td>形容詞</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-lu</td>
+                                    <td>-lu</td>
+                                    <td>副詞</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h4>2.2.2 機能品詞</h4>
+                    <p>
+                        接続詞・心態詞の2つは<b>機能品詞</b>である。
+                        可変品詞とは違い品詞転換は出来ない。
+                    </p>
+                    <h3>2.2 名詞の格</h3>
+                    <p>
+                        カタパイ語の名詞は、<b>生格(genitive)</b>・<b>殺格(necative)</b>・<b>与格(dative)</b>・<b>奪格(ablative)</b>の4つ。<br>
+                        それぞれ格接辞<span class="kaei-maru">-nin</span>(-nin)、<span class="kaei-maru">-se</span>(-se)、<span class="kaei-maru">-yo</span>(-yo)、<span class="kaei-maru">-ten</span>(-ten) を用いる。語末が格語尾であるものは名詞扱いになる。
+                        これらの格は、概ね次のような意味を表す。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>格接辞</th>
+                                    <th></th>
+                                    <th>格</th>
+                                    <th>意味</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">-nin</td>
+                                    <td>-nin</td>
+                                    <td>生格</td>
+                                    <td>〜は生まれる</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-se</td>
+                                    <td>-se</td>
+                                    <td>殺格</td>
+                                    <td>〜は殺される</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-yo</td>
+                                    <td>-yo</td>
+                                    <td>与格</td>
+                                    <td>〜は与えられる</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-ten</td>
+                                    <td>-ten</td>
+                                    <td>奪格</td>
+                                    <td>〜は奪われる</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>
+                        なお、生格を形容詞的な「〜の」の意味には使わない。
+                        修飾は形容詞で行う。
+                        所有の意味の「～の」は所有代接辞を用いる。
+                    </p>
+                    <h4>2.2.1 生格・殺格の基本イメージ</h4>
+                    <p>
+                        生格と殺格は、対象存在の有無、あるいは対象の生成と消滅に関する双対概念である。
+                    </p>
+                    <p>
+                        動詞で表される行為により発生する、あるいは存在する対象は<b>生格</b> <span class="kaei-maru">-nin</span> (-nin)で表す。
+                        対称的に、動詞で表される行為により消滅する、あるいは存在しない対象は<b>殺格</b> <span class="kaei-maru">-se</span> (-se)で表す。
+                    </p>
+                    <img src="../pic/gennec.png" alt="gennec">
+                    <h4>2.2.2 与格・奪格の基本イメージ</h4>
+                    <p>
+                        与格と奪格は、何らかの要素を受け渡す対象についての双対概念である。
+                    </p>
+                    <p>
+                        何らかの要素を受け取る対象は<b>与格</b> <span class="kaei-maru">-yo</span> (-yo)で表現する。
+                        一方で、何らかの要素を放出する、または奪われる対象は<b>奪格</b> <span class="kaei-maru">-ten</span> (-ten)で表現する。
+                    </p>
+                    <p>
+                        与格対象・奪格対象間でやり取りされる「要素」自体は、状況に応じて生格、殺格、または主題としての呼格が用いられる。
+                    </p>
+                    <img src="../pic/databl.png" alt="databl">
+                    <h4>2.2.3 生格用法</h4>
+                    <p>
+                        <ul>
+                            <li>主体生格</li>
+                            <li>生成生格</li>
+                        </ul>
+                    </p>
+                    <h4>2.2.4 殺格用法</h4>
+                    <p>
+                        <ul>
+                            <li>殺害殺格</li>
+                            <li>停止殺格</li>
+                            <li>消失殺格</li>
+                        </ul>
+                    </p>
+                    <h4>2.2.5 与格用法</h4>
+                    <p>
+                        <ul>
+                            <li>供与与格</li>
+                            <li>方向与格</li>
+                        </ul>
+                    </p>
+                    <h4>2.2.6 奪格用法</h4>
+                    <p>
+                        <ul>
+                            <li>方向奪格</li>
+                            <li>分離奪格</li>
+                        </ul>
+                    </p>
+                    <h4>2.2.7 格抱合</h4>
+                    <p>
+                        格抱合(case incorporation)により格含みの意味を包含した名詞を作ることができる。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>格抱合接辞</th>
+                                    <th></th>
+                                    <th>格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">-niyi</td>
+                                    <td>-niyi</td>
+                                    <td>生格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-seyi</td>
+                                    <td>-seyi</td>
+                                    <td>殺格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-yoyi</td>
+                                    <td>-yoyi</td>
+                                    <td>与格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-teyi</td>
+                                    <td>-teyi</td>
+                                    <td>奪格</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>
+                        例えば、<span class="kaei-maru">cicigi-</span>(cicigi-)「書く（こと）」に与格抱合接辞 <span class="kaei-maru">-yoyi</span>(-yoyi)を抱合させて新たな語幹 <span class="kaei-maru">cicigiyoyi-</span>(cicigiyoyi-)「内容を書き下す先の媒体」を構成する。
+                    </p>
+                    <h3>2.3 接辞</h3>
+                    カタパイ語では、語根に接辞を接続させることで、語義を派生させることができる。
+                    <h4>2.3.1 一般接辞</h4>
+                    <p>
+                        カタパイ語における一般接辞は接頭辞 <span class="kaei-maru">ri-</span>(ri-)「～の人」のみで、これは氏族、国家、場所、形容詞的な語彙に接続する。
+                        <ul class="example">
+                            <li><span class="kaei-maru">ripwuce</span> (ripwuce)<br>「愚か者」</li>
+                        </ul>
+                    </p>
+                    <h4>2.3.2 所有代接辞</h4>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>所有代接辞</th>
+                                    <th></th>
+                                    <th>人称</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">-hu</td>
+                                    <td>-hu</td>
+                                    <td>1sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-mwu</td>
+                                    <td>-mwu</td>
+                                    <td>2sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-nya</td>
+                                    <td>-nya</td>
+                                    <td>3sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-ca</td>
+                                    <td>-ca</td>
+                                    <td>1pl incl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-kayi</td>
+                                    <td>-kayi</td>
+                                    <td>1pl excl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-kamwu</td>
+                                    <td>-kamwu</td>
+                                    <td>2pl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-qira</td>
+                                    <td>-ira</td>
+                                    <td>3pl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-ni</td>
+                                    <td>-ni</td>
+                                    <td>4g</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h3>2.4 代名詞</h3>
+                    <p>
+                        <b>人称代名詞</b>と<b>指示代名詞</b>がある。
+                        文法的な振る舞いは一般の名詞と同じ。
+                    </p>
+                    <h4>2.4.1 人称代名詞</h4>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>人称代名詞</th>
+                                    <th></th>
+                                    <th>人称</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">ga</td>
+                                    <td>ga</td>
+                                    <td>1sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">ko</td>
+                                    <td>ko</td>
+                                    <td>2sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">qiqa</td>
+                                    <td>ia</td>
+                                    <td>3sg</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">kita</td>
+                                    <td>kita</td>
+                                    <td>1pl incl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">kamami</td>
+                                    <td>kamami</td>
+                                    <td>1pl excl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">kamwu</td>
+                                    <td>kamwu</td>
+                                    <td>2pl</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">qi</td>
+                                    <td>i</td>
+                                    <td>3pl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h4>2.4.2 指示代名詞</h4>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>指示代名詞</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>備考</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">qeqe</td>
+                                    <td>ee</td>
+                                    <td>これ（近称）</td>
+                                    <td>話者の近く</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">qena</td>
+                                    <td>ena</td>
+                                    <td>それ（中称）</td>
+                                    <td>相手の近く</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">qare</td>
+                                    <td>are</td>
+                                    <td>あれ（遠称）</td>
+                                    <td>話者＆相手から離れている</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">qoqo</td>
+                                    <td>oo</td>
+                                    <td>例のアレ（定称）</td>
+                                    <td>ここに存在しないか、過去のもの</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h3>2.5 接続詞</h3>
+                    <p>
+                        接続詞は、文と文、節と節、語と語を繋ぐ。
+                        順接は<span class="kaei-maru">ma</span> (ma)、逆接は<span class="kaei-maru">gaqe</span> (gae)を用いる。
+                        <ul class="example">
+                            <li><span class="kaei-maru">xake ma siwo</span> (xake ma siwo)<br>「上と下」</li>
+                        </ul>
+                    </p>
+                    <h3>2.6 心態詞</h3>
+                    <p>
+                        常に文頭、動詞より前に置かれる。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>敬体命令</th>
+                                    <th>敬体禁止</th>
+                                    <th>常体命令</th>
+                                    <th>常体禁止</th>
+                                    <th>蔑体命令</th>
+                                    <th>蔑体禁止</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <td><span class="kaei-maru">-te</span> -te</td>
+                                    <td><span class="kaei-maru">-ta</span> -ta</td>
+                                    <td><span class="kaei-maru">-re</span> -re</td>
+                                    <td><span class="kaei-maru">-ra</span> -ra</td>
+                                    <td><span class="kaei-maru">-ne</span> -ne</td>
+                                    <td><span class="kaei-maru">-na</span> -na</td>
+                                </tr>
+                                <tr>
+                                    <th>祈祷</th>
+                                    <td><span class="kaei-maru">maya-</span> maya-</td>
+                                    <td><span class="kaei-maru">mayate</span> mayate</td>
+                                    <td><span class="kaei-maru">mayata</span> mayata</td>
+                                    <td><span class="kaei-maru">mayare</span> mayare</td>
+                                    <td><span class="kaei-maru">mayara</span> mayara</td>
+                                    <td><span class="kaei-maru">mayane</span> mayane</td>
+                                    <td><span class="kaei-maru">mayana</span> mayana</td>
+                                </tr>
+                                <tr>
+                                    <th>要請</th>
+                                    <td><span class="kaei-maru">yasu-</span> yasu-</td>
+                                    <td><span class="kaei-maru">yasute</span> yasute</td>
+                                    <td><span class="kaei-maru">yasuta</span> yasuta</td>
+                                    <td><span class="kaei-maru">yasure</span> yasure</td>
+                                    <td><span class="kaei-maru">yasura</span> yasura</td>
+                                    <td><span class="kaei-maru">yasune</span> yasune</td>
+                                    <td><span class="kaei-maru">yasuna</span> yasuna</td>
+                                </tr>
+                                <tr>
+                                    <th>要求</th>
+                                    <td><span class="kaei-maru">qane-</span> ane-</td>
+                                    <td><span class="kaei-maru">qanete</span> anete</td>
+                                    <td><span class="kaei-maru">qaneta</span> aneta</td>
+                                    <td><span class="kaei-maru">qanere</span> anere</td>
+                                    <td><span class="kaei-maru">qanera</span> anera</td>
+                                    <td><span class="kaei-maru">qanene</span> anene</td>
+                                    <td><span class="kaei-maru">qanena</span> anena</td>
+                                </tr>
+                                <tr>
+                                    <th>希望</th>
+                                    <td><span class="kaei-maru">wufu-</span> wufu-</td>
+                                    <td><span class="kaei-maru">wufute</span> wufute</td>
+                                    <td><span class="kaei-maru">wufuta</span> wufuta</td>
+                                    <td><span class="kaei-maru">wufure</span> wufure</td>
+                                    <td><span class="kaei-maru">wufura</span> wufura</td>
+                                    <td><span class="kaei-maru">wufune</span> wufune</td>
+                                    <td><span class="kaei-maru">wufuna</span> wufuna</td>
+                                </tr>
+                                <tr>
+                                    <th>勧誘</th>
+                                    <td><span class="kaei-maru">fanaqu-</span> fanau-</td>
+                                    <td><span class="kaei-maru">fanaqute</span> fanaute</td>
+                                    <td><span class="kaei-maru">fanaquta</span> fanauta</td>
+                                    <td><span class="kaei-maru">fanaqure</span> fanaure</td>
+                                    <td><span class="kaei-maru">fanaqura</span> fanaura</td>
+                                    <td><span class="kaei-maru">fanaqune</span> fanaune</td>
+                                    <td><span class="kaei-maru">fanaquna</span> fanauna</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <br>
+                    <h2>3. 統語論</h2>
+                    <h3>3.1 基本語順</h3>
+                    <p>
+                        類型論的には<b>VSO-NA語順</b>（動詞・主語・目的語/被修飾語・修飾語）もしくは<b>VOS-NA語順</b>（動詞・目的語・主語/被修飾語・修飾語）が支配的である。
+                        ただしカタパイ語では主語や目的語を規定しておらず、生殺与奪格の範疇で語順が定まるため、主語・目的語の語順は一定ではないともいえる。
+                        また、文全体において名詞の呼応用法を用いて<b>題述構造</b>（題目・述部）をとることがある。
+                    </p>
+                    <h3>3.2 無述語文</h3>
+                    <p>
+                        本の題名など、述語が存在しない文を<b>無述語文</b>と呼ぶ。
+                        このとき主名詞には名詞語尾 <span class="kaei-maru">-li</span>(-li) を付加する。
+                    </p>
+                    <h3>3.3 名詞述語文</h3>
+                    <p>
+                        述語が名詞句で構成される文を<b>名詞述語文</b>と呼ぶ。この時の基本語順は「題目名詞―述部名詞」となる。
+                        このとき、題目名詞と述部名詞の両方に名詞語尾 <span class="kaei-maru">-li</span>(-li) を付加する。
+                    </p>
+                    <h3>3.4 動詞述語文</h3>
+                    <p>
+                        述語が動詞句で構成される文を<b>動詞述語文</b>と呼ぶ。
+                        この時の基本語順は「動詞―生格―殺格―与格―奪格」となる。
+                    </p>
+                    <br>
+                    <h2>4. 語彙</h2>
+                    <p>
+                        外来語はカタパイ語の音素のみを用いて転写される。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/ui.js"></script>
+        
+    </body>
+</html>
