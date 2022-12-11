@@ -34,10 +34,11 @@
             <div id="main">
                 <div class="header">
                     <h1>文法</h1>
+                    <h2 class="kaei-maru">lamali</h2>
                 </div>
 
                 <div class="content">
-                    <p>現行文法は ver.0.3 (2022-10-16)。</p>
+                    <p>現行文法は ver.0.4 (2022-12-11)。</p>
                     <br>
                     <h2>1. 音韻論</h2>
                     <h3>1.1 音素</h3>
@@ -381,19 +382,20 @@
                     <h3>2.1 品詞分類</h3>
                     <p>品詞は以下の6種類がある：</p>
                     <ul>
-                        <li>名詞 noun</li>
-                        <li>動詞 verb</li>
-                        <li>形容詞 adjective</li>
-                        <li>副詞 adverb</li>
-                        <li>接続詞 conjugation</li>
-                        <li>心態詞 attitudinal</li>
+                        <li><b>名詞</b> noun</li>
+                        <li><b>動詞</b> verb</li>
+                        <li><b>形容詞</b> adjective</li>
+                        <li><b>副詞</b> adverb</li>
+                        <li><b>接続詞</b> conjugation</li>
+                        <li><b>心態詞</b> attitudinal</li>
                     </ul>
-                    <h4>2.1.1 可換品詞</h4>
+                    <p>このうち、名詞・動詞・形容詞・副詞は<b>可換詞</b>、接続詞・心態詞は<b>機能詞</b>に分類される。</p>
+                    <h4>2.1.1 可換詞</h4>
                     <p>
-                        カタパイ語の品詞のうち、名詞・動詞・形容詞・副詞の4つは<b>可換品詞</b>である。
+                        カタパイ語の品詞のうち、<b>名詞</b>・<b>動詞</b>・<b>形容詞</b>・<b>副詞</b>の4つは<b>可換詞</b>である。
                         これらは相互に品詞転換が可能で、品詞語尾を語幹に接続することで品詞転換がなされる。
-                        品詞語尾はそれぞれ名詞：<span class="kaei-maru">-li</span>(-li)、動詞：<span class="kaei-maru">-la</span>(-la)、形容詞：<span class="kaei-maru">-le</span>(-le)、副詞：<span class="kaei-maru">-lu</span>(-lu)であるが、通常、名詞語尾<span class="kaei-maru">-li</span>(-li)は省略される。
-                        辞書形、題目、名詞句（無述語文）、呼応用法のときには名詞語尾<span class="kaei-maru">-li</span>(-li)が必須。
+                        品詞語尾はそれぞれ名詞：<span class="kaei-maru">-li</span>(-li)、動詞：<span class="kaei-maru">-la</span>(-la)、形容詞：<span class="kaei-maru">-le</span>(-le)、副詞：<span class="kaei-maru">-lu</span>(-lu)である。
+                        通常、名詞語尾<span class="kaei-maru">-li</span>(-li)は省略されるが、題目、名詞句（無述語文）、呼応のときには名詞語尾<span class="kaei-maru">-li</span>(-li)が必須。
                     </p>
                     <p>
                         <table class="pure-table pure-table-horizontal">
@@ -428,10 +430,10 @@
                             </tbody>
                         </table>
                     </p>
-                    <h4>2.2.2 機能品詞</h4>
+                    <h4>2.2.2 機能詞</h4>
                     <p>
-                        接続詞・心態詞の2つは<b>機能品詞</b>である。
-                        可変品詞とは違い品詞転換は出来ない。
+                        接続詞・心態詞の2つは<b>機能詞</b>である。
+                        可換詞とは違い品詞転換は出来ず、接続詞なら接続表現、心態詞なら心態表現、のように、これらは文中の機能が固定されている。
                     </p>
                     <h3>2.2 名詞の格</h3>
                     <p>
@@ -500,7 +502,7 @@
                         一方で、何らかの要素を放出する、または奪われる対象は<b>奪格</b> <span class="kaei-maru">-ten</span> (-ten)で表現する。
                     </p>
                     <p>
-                        与格対象・奪格対象間でやり取りされる「要素」自体は、状況に応じて生格、殺格、または主題としての呼格が用いられる。
+                        与格対象・奪格対象間でやり取りされる「要素」自体は、状況に応じて生格、殺格、または題目としての名詞が用いられる。
                     </p>
                     <img src="../pic/databl.png" alt="databl">
                     <h4>2.2.3 生格用法</h4>
@@ -513,9 +515,10 @@
                     <h4>2.2.4 殺格用法</h4>
                     <p>
                         <ul>
-                            <li>殺害殺格</li>
                             <li>停止殺格</li>
                             <li>消失殺格</li>
+                            <li>変化殺格</li>
+                            <li>廃棄殺格</li>
                         </ul>
                     </p>
                     <h4>2.2.5 与格用法</h4>
@@ -570,23 +573,39 @@
                         </table>
                     </p>
                     <p>
-                        例えば、<span class="kaei-maru">cicigi-</span>(cicigi-)「書く（こと）」に与格抱合接辞 <span class="kaei-maru">-yoyi</span>(-yoyi)を抱合させて新たな語幹 <span class="kaei-maru">cicigiyoyi-</span>(cicigiyoyi-)「内容を書き下す先の媒体」を構成する。
+                        例えば、<span class="kaei-maru">cigi-</span>(cigi-)「書く（こと）」に与格抱合接辞 <span class="kaei-maru">-yoyi</span>(-yoyi)を抱合させて新たな語幹 <span class="kaei-maru">cigiyoyi-</span>(cigiyoyi-)「内容を書き下す先の媒体（＝紙など）」を構成する。
                     </p>
                     <h3>2.3 接辞</h3>
                     カタパイ語では、語根に接辞を接続させることで、語義を派生させることができる。
                     <h4>2.3.1 一般接辞</h4>
                     <p>
-                        カタパイ語における一般接辞は接頭辞 <span class="kaei-maru">ri-</span>(ri-)「～の人」のみで、これは氏族、国家、場所、形容詞的な語彙に接続する。
+                        カタパイ語における一般接辞は接頭辞 <span class="kaei-maru">ri-</span>(ri-)「～の人」のみで、これは氏族、国家、場所、形容詞的な語彙（あるいは語義を形容詞的に解釈して）に接続する。
                         <ul class="example">
                             <li><span class="kaei-maru">ripwuce</span> (ripwuce)<br>「愚か者」</li>
                         </ul>
                     </p>
-                    <h4>2.3.2 所有代接辞</h4>
+                    <h4>2.3.2 所有接辞</h4>
+                    <p>
+                        所有接辞を語根の語尾に付属させることで所有関係を表すことができる。
+                    </p>
+                    <p>
+                        所有接辞は全8つあり、
+                        1人称単数 <span class="kaei-maru">-hu</span>(-hu)「私の～」、
+                        2人称単数<span class="kaei-maru">-mwu</span>(-mwu)「あなたの～」、
+                        3人称単数<span class="kaei-maru">-nya</span>(-nya)「彼/彼女/それの～」、
+                        1人称複数包含<span class="kaei-maru">-ca</span>(-ca)「（あなたと）私たちの～」、
+                        1人称複数除外<span class="kaei-maru">-kayi</span>(-kayi)「私たちの～」、
+                        2人称複数<span class="kaei-maru">-kamwu</span>(-kamwu)「あなたたちの～」、
+                        3人称複数<span class="kaei-maru">-qira</span>(-ira)「彼ら/彼女ら/それらの～」、
+                        と、一般の語根の所有や所有者を明示しない
+                        4人称<span class="kaei-maru">-ni</span>(-ni)「何かの～」
+                        がある。
+                    </p>
                     <p>
                         <table class="pure-table pure-table-horizontal">
                             <thead>
                                 <tr>
-                                    <th>所有代接辞</th>
+                                    <th>所有接辞</th>
                                     <th></th>
                                     <th>人称</th>
                                 </tr>
@@ -635,12 +654,16 @@
                             </tbody>
                         </table>
                     </p>
-                    <h3>2.4 代名詞</h3>
+                    <h3>2.4 代可換詞</h3>
                     <p>
-                        <b>人称代名詞</b>と<b>指示代名詞</b>がある。
-                        文法的な振る舞いは一般の名詞と同じ。
+                        代可換詞は可換詞の代わりに用いられる単語であり、<b>人称代可換詞</b>と<b>指示代可換詞</b>がある。
+                        文法的な振る舞いは一般の可換詞と同じ（つまり、名詞・動詞・形容詞・副詞になりうる）。
                     </p>
-                    <h4>2.4.1 人称代名詞</h4>
+                    <h4>2.4.1 人称代可換詞</h4>
+                    <p>
+                        話し手を指す一人称、受け手を指す二人称、それ以外の人、物を指す三人称を区別する。
+                        また、単数と複数を区別する。
+                    </p>
                     <p>
                         <table class="pure-table pure-table-horizontal">
                             <thead>
@@ -689,7 +712,8 @@
                             </tbody>
                         </table>
                     </p>
-                    <h4>2.4.2 指示代名詞</h4>
+                    <h4>2.4.2 指示代可換詞</h4>
+                    <p>カタパイ語には、<b>近称</b>・<b>中称</b>・<b>遠称</b>・<b>定称</b>の4つの<b>指示代可換詞</b>がある。</p>
                     <p>
                         <table class="pure-table pure-table-horizontal">
                             <thead>
@@ -736,9 +760,12 @@
                             <li><span class="kaei-maru">xake ma siwo</span> (xake ma siwo)<br>「上と下」</li>
                         </ul>
                     </p>
+                    <p>
+                        ro は A ro B で「BのようにA」の意味。
+                    </p>
                     <h3>2.6 心態詞</h3>
                     <p>
-                        常に文頭、動詞より前に置かれる。
+                        <b>心態詞</b>は、祈祷・要請・指令・希望・勧誘といった、聞き手に対する意図を表す。常に文頭、動詞より前に置かれる。
                     </p>
                     <p>
                         <table class="pure-table pure-table-horizontal">
@@ -784,7 +811,7 @@
                                     <td><span class="kaei-maru">yasuna</span> yasuna</td>
                                 </tr>
                                 <tr>
-                                    <th>要求</th>
+                                    <th>指令</th>
                                     <td><span class="kaei-maru">qane-</span> ane-</td>
                                     <td><span class="kaei-maru">qanete</span> anete</td>
                                     <td><span class="kaei-maru">qaneta</span> aneta</td>
@@ -816,6 +843,289 @@
                             </tbody>
                         </table>
                     </p>
+                    <h3>2.7 動詞の相</h3>
+                    <p>
+                        瞬間相・習慣相・継続相・継続習慣相の4つがある。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <th>相</th>
+                                <th>形態</th>
+                                <th></th>
+                                <th>解説</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>瞬間相</td>
+                                    <td>（無変化）</td>
+                                    <td><span class="kaei-maru">kilala</span> kilala</td>
+                                    <td>「知る」</td>
+                                </tr>
+                                <tr>
+                                    <td>習慣相</td>
+                                    <td>頭1音節反復</td>
+                                    <td><span class="kaei-maru">kikilala</span> kikilala</td>
+                                    <td>「いつも知る」</td>
+                                </tr>
+                                <tr>
+                                    <td>継続相</td>
+                                    <td>頭2音節反復</td>
+                                    <td><span class="kaei-maru">kilakilala</span> kilakilala</td>
+                                    <td>「知っている」</td>
+                                </tr>
+                                <tr>
+                                    <td>継続習慣相</td>
+                                    <td>頭1音節＋頭2音節反復</td>
+                                    <td><span class="kaei-maru">kikilakilala</span> kikilakilala</td>
+                                    <td>「いつも知っている」</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </p>
+                    <h3>2.8 動詞の態</h3>
+                    <p>
+                        能動態、使役態、自発態、使役自発態の4つがある。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <th>態</th>
+                                <th>形態</th>
+                                <th></th>
+                                <th>解説</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>能動態</td>
+                                    <td>R-la</td>
+                                    <td><span class="kaei-maru">kilala</span> kilala</td>
+                                    <td>「知る」</td>
+                                </tr>
+                                <tr>
+                                    <td>使役態</td>
+                                    <td>ha-R-la</td>
+                                    <td><span class="kaei-maru">hakilala</span> hakilala</td>
+                                    <td>「知らせる」</td>
+                                </tr>
+                                <tr>
+                                    <td>自発態</td>
+                                    <td>R-la-ki</td>
+                                    <td><span class="kaei-maru">kilalaki</span> kilalaki</td>
+                                    <td>「知られる」</td>
+                                </tr>
+                                <tr>
+                                    <td>使役自発態</td>
+                                    <td>ha-R-la-ki</td>
+                                    <td><span class="kaei-maru">hakilaki</span> hakilalaki</td>
+                                    <td>「知らせらせる」</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>
+                        2.7節の動詞の相と併せて、使役自発態継続習慣相のような曲用も可能。
+                        <ul class="example">
+                            <li>
+                                <span class="kaei-maru">hakikilakilalaki</span><br>
+                                hakikilakilalaki<br>
+                                「いつも知らさせられている」
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>2.9 数体系</h3>
+                    <p>
+                        十進法。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <th>数字</th>
+                                <th>カタパイ語名</th>
+                                <th></th>
+                                <th>解説</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">qaqapwa</span></td>
+                                    <td>aapwa</td>
+                                    <td>零、0</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">te</span></td>
+                                    <td>te</td>
+                                    <td>一、1</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">ruqa</span></td>
+                                    <td>rua</td>
+                                    <td>二、2</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">telu</span></td>
+                                    <td>telu</td>
+                                    <td>三、3</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">fagi</span></td>
+                                    <td>fagi</td>
+                                    <td>四、4</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">lima</span></td>
+                                    <td>lima</td>
+                                    <td>五、5</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">wono</span></td>
+                                    <td>wono</td>
+                                    <td>六、6</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">fitu</span></td>
+                                    <td>fitu</td>
+                                    <td>七、7</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">walu</span></td>
+                                    <td>walu</td>
+                                    <td>八、8</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">xiwa</span></td>
+                                    <td>xiwa</td>
+                                    <td>九、9</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">gawulu</span></td>
+                                    <td>gawulu</td>
+                                    <td>十、10</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">pwukiwa</span></td>
+                                    <td>pwukiwa</td>
+                                    <td>百、100</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span class="kaei-maru">garatu</span></td>
+                                    <td>garatu</td>
+                                    <td>千、1000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>
+                        文法的には可換詞の扱いで、2桁以上の数は数量限定複合（2.10で後述）による複合語扱いとなる。
+                        分かりやすさの為にハイフンを挿入できる（なくてもよい）。<br>
+                        <ul class="example">
+                            <li>
+                                <span class="kaei-maru">tegaratu-ruqapwukiwa-telugawulu-fagi</span><br>
+                                tegaratu-ruapwukiwa-telugawulu-fagi<br>
+                                「1234」
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>2.10 複合語</h3>
+                    <p>
+                        並列・格限定・数量限定・所有。格限定・数量限定は前置修飾的に複合語を形成する。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <th></th>
+                                <th>解説</th>
+                                <th>例</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>並列</td>
+                                    <td>等位関係や対立関係にある2つを並べて表す。</td>
+                                    <td><span class="kaei-maru">lelepusa</span> (lelepusa)<br>「良し悪し」</td>
+                                </tr>
+                                <tr>
+                                    <td>格限定</td>
+                                    <td>後半に対して前半が格の関係にあることを表す。</td>
+                                    <td><span class="kaei-maru">pwonnukila</span> (pwonnukila)<br>「全知」</td>
+                                </tr>
+                                <tr>
+                                    <td>数量限定</td>
+                                    <td>前半が後半の数量を表す。</td>
+                                    <td><span class="kaei-maru">telumaquri</span> (telumauri)<br>「3つの命」</td>
+                                </tr>
+                                <tr>
+                                    <td>所有</td>
+                                    <td>後半が前半を所有することを表す。</td>
+                                    <td><span class="kaei-maru">waqeniqaramata</span> (waeniaramata)<br>「人の足」</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h4>2.10.1 並列複合語</h4>
+                    <p>
+                        2単語をそのまま並べる。
+                    </p>
+                    <h4>2.10.2 格限定複合語</h4>
+                    <p>
+                        格の関係にある2単語を、<b>格限定接辞</b>を挟んで並べる。
+                    </p>
+                    <p>
+                        <table class="pure-table pure-table-horizontal">
+                            <thead>
+                                <tr>
+                                    <th>格限定接辞</th>
+                                    <th></th>
+                                    <th>格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="kaei-maru">-nu-</td>
+                                    <td>-nu-</td>
+                                    <td>生格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-su-</td>
+                                    <td>-su-</td>
+                                    <td>殺格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-yu-</td>
+                                    <td>-yu-</td>
+                                    <td>与格</td>
+                                </tr>
+                                <tr>
+                                    <td class="kaei-maru">-tu-</td>
+                                    <td>-tu-</td>
+                                    <td>奪格</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p>
+                        つまり、<span class="kaei-maru">pwonnukila</span> (pwonnukila)「全知」を動詞述語文に直すと、
+                        <span class="kaei-maru">kilala pwonnin</span> (kilala pwonnin)「全てを知る」ということを表している。
+                    </p>
+                    <h4>2.10.3 数量限定複合語</h4>
+                    <p>
+                        何らかの単語に、数を表す単語を前置させる。
+                    </p>
+                    <h4>2.10.4 所有複合語</h4>
+                    <p>
+                        被所有者、所有者の2単語の間に<b>所有接辞</b><span class="kaei-maru">-ni-</span>(-ni-)を挟む。
+                    </p>
                     <br>
                     <h2>3. 統語論</h2>
                     <h3>3.1 基本語順</h3>
@@ -837,10 +1147,20 @@
                     <h3>3.4 動詞述語文</h3>
                     <p>
                         述語が動詞句で構成される文を<b>動詞述語文</b>と呼ぶ。
-                        この時の基本語順は「動詞―生格―殺格―与格―奪格」となる。
+                        この時の基本語順は「動詞―生格―殺格―与格―奪格」となるが、名詞句の語順は自由に入れ替えてよい。
+                    </p>
+                    <h3>3.5 接続詞の用法</h3>
+                    <p>
+                        A ma B pwalalu<br>
+                        AもBも
                     </p>
                     <br>
                     <h2>4. 語彙</h2>
+                    <h3>4.1 辞書</h3>
+                    <p>
+                        カタパイ語の辞書を<a href="https://zpdic.ziphil.com/dictionary/371">こちら（外部サイト）</a>で公開、随時更新中。
+                    </p>
+                    <h3>4.2 外来語転写規則</h3>
                     <p>
                         外来語はカタパイ語の音素のみを用いて転写される。
                     </p>
