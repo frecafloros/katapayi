@@ -121,6 +121,10 @@ The content `<div>` is where all your content goes.
     border-radius: 100px;
 }
 
+.vscroll{
+    overflow: auto;
+    white-space: pre;
+  }
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
